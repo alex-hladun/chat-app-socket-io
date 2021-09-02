@@ -12,6 +12,14 @@
         * Show state initialization
         * Show Reducer
         * Show the flow of a message coming in from back-end
+    * Authentication
+        * Attaching sessionID to socket on login
+        * CORs ensures that we are only receiving from expected domains
+        * Won’t be allowed to connect without username
+            * Could check for username, or use a token system attached
+            * Store this in localStorage
+            * Show where this lives in the original http connection
+        * Show middleware
 * Alex
     * SocketManager
         * Creates Socket server and handles middleware, Redis connection, socket listeners, and calls dynamo endpoints
@@ -23,19 +31,14 @@
                     * Session IDS and username/online status
                 * Lists – a collection of Strings in the order they were added (stringify data).
                     * Used to store draw data (stringified objects)
-        * Authentication
-            * Attaching sessionID to socket on login
-            * CORs ensures that we are only receiving from expected domains
-            * Won’t be allowed to connect without username
-                * Could check for username, or use a token system attached
-                * Store this in localStorage
-                * Show where this lives in the original http connection
-            * Show middleware
     * DynamoDB
         * Looked at DocumentDB, was more of a graphQL replacement
         * User credentials, messages, room list
         * Show table layout in AWS
         * Show table & queries/puts
+    * CI/CD (show before Terraform & deploy)
+        * Docker
+        * Show deploy
     * Terraform
         * Terraform init
         * Terraform plan
@@ -48,9 +51,6 @@
             * ECR / ECS
             * Nat Instance for each AZ
             * Terraform.tf to store state file
-    * CI/CD
-        * Docker
-        * Show deploy
     * Testing
         * Haven’t done any sort of load balancing, but 10% / 85% threshhole for CPU utilization is used
     * Sockets
