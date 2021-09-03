@@ -21,6 +21,7 @@
             * Show where this lives in the original http connection
         * Show middleware
 * Alex
+
     * SocketManager
         * Creates Socket server and handles middleware, Redis connection, socket listeners, and calls dynamo endpoints
             * High-level overview of socket listeners
@@ -39,7 +40,7 @@
     * CI/CD (show before Terraform & deploy)
         * Docker
         * Show deploy
-        
+
     * Terraform
         * Terraform init
         * Terraform plan
