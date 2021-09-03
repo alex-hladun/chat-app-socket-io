@@ -39,6 +39,7 @@
     * CI/CD (show before Terraform & deploy)
         * Docker
         * Show deploy
+        
     * Terraform
         * Terraform init
         * Terraform plan
